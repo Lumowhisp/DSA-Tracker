@@ -1,0 +1,73 @@
+# =========================
+# Build directories
+# =========================
+build/
+Build/
+bin/
+out/
+dist/
+Debug/
+Release/
+x64/
+x86/
+
+# =========================
+# CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+Makefile
+
+# =========================
+# Object & binary files
+# =========================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+
+# =========================
+# Dependency files
+# =========================
+*.d
+*.gcda
+*.gcno
+*.gcov
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# Keep recommended settings if you use them
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
