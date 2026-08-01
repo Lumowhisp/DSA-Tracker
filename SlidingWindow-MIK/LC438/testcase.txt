@@ -1,0 +1,395 @@
+cbaebabacd
+abc
+2 0 6
+
+abab
+ab
+3 0 2 4
+
+aaaaaaaaaa
+aaa
+8 0 1 2 3 4 5 6 7
+
+abcdefg
+hij
+0
+
+a
+a
+1 0
+
+a
+b
+0
+
+baa
+aa
+1 1
+
+abababab
+aab
+0
+
+acdcaeccde
+c
+4 2 5 6
+
+abcabcabc
+cab
+3 2 5 8
+
+zzzzzz
+zzz
+4 0 1 2 3
+
+xyz
+zyx
+0
+
+abcd
+dcba
+0
+
+abc
+abcd
+0
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+1 0
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
+0
+
+abcde
+edc
+0
+
+abababababababab
+abab
+7 0 2 4 6 8 10 12 14
+
+bbbbbbbbbb
+bb
+9 0 1 2 3 4 5 6 7 8
+
+abacbabc
+abc
+2 0 5
+
+abcabc
+abc
+2 0 3
+
+aaaaaaaaab
+ba
+0
+
+xxyyzz
+xyz
+0
+
+qwertyuiop
+poi
+0
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+a
+50 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aa
+49 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
+
+abccbaabccba
+abcc
+2 0 6
+
+mississippi
+issi
+2 1 4
+
+leetcode
+code
+1 4
+
+abcabcabcabc
+abc
+4 0 3 6 9
+
+abcabcabcabc
+acb
+0
+
+abcabcabcabc
+aac
+0
+
+aaaaaaaa
+b
+0
+
+bbbbbbbb
+bbb
+6 0 1 2 3 4 5 6
+
+abcdeabcde
+bcd
+2 1 6
+
+abcdeabcde
+edc
+0
+
+ababababab
+aba
+4 0 2 4 6
+
+ababababab
+bab
+3 1 3 5
+
+ababababab
+abba
+0
+
+aabbaabb
+aabb
+2 0 4
+
+aabbaabb
+abba
+1 1
+
+aabbaabb
+bbaa
+1 2
+
+abcddcba
+abcd
+1 0
+
+abcddcba
+dcba
+1 4
+
+abcddcba
+bcdd
+1 1
+
+zzzxyzzz
+zzz
+2 0 5
+
+zzzxyzzz
+xyz
+1 3
+
+xyzxyzxyz
+yzx
+3 1 4 7
+
+xyzxyzxyz
+zxy
+3 2 5 8
+
+xyzxyzxyz
+xxx
+0
+
+cccccccccccc
+cccc
+9 0 1 2 3 4 5 6 7 8
+
+cccccccccccc
+ccccc
+8 0 1 2 3 4 5 6 7
+
+ababacbabc
+abc
+2 3 7
+
+ababacbabc
+bac
+0
+
+ababacbabc
+cab
+0
+
+ababacbabc
+abb
+0
+
+abcdefabcdef
+fed
+0
+
+abcdefabcdef
+efa
+0
+
+abcdefabcdef
+fff
+0
+
+aaabbbccc
+abc
+0
+
+aaabbbccc
+aabb
+0
+
+aaabbbccc
+bbcc
+0
+
+ababbbbbba
+bbb
+2 3 4
+
+bbbbabbbb
+abbb
+1 4
+
+abcabcab
+abc
+2 0 3
+
+abcabcab
+bca
+1 3
+
+abcabcab
+cab
+1 2
+
+abcabcab
+acb
+0
+
+xyz
+x
+1 0
+
+xyz
+y
+1 1
+
+xyz
+z
+1 2
+
+xyz
+xy
+1 0
+
+xyz
+yz
+1 1
+
+xyz
+xz
+0
+
+aaaaabaaaaa
+aaaaa
+2 0 6
+
+aaaaabaaaaa
+baaaa
+1 5
+
+aaaaabaaaaa
+aaaab
+0
+
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaa
+11 0 1 2 3 4 5 6 7 8 9 10
+
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaa
+10 0 1 2 3 4 5 6 7 8 9
+
+abcabcxyzxyz
+xyz
+2 6 9
+
+abcabcxyzxyz
+zyx
+0
+
+abcabcxyzxyz
+abc
+2 0 3
+
+abcabcxyzxyz
+cba
+0
+
+bbbbccccdddd
+bcd
+0
+
+bbbbccccdddd
+ddc
+0
+
+abcdefghijklmnopqrst
+tsrq
+0
+
+abcdefghijklmnopqrst
+mnop
+1 12
+
+abcdefghijklmnopqrst
+qrst
+1 16
+
+abababac
+aac
+0
+
+abababac
+aca
+0
+
+abababac
+cab
+0
+
+aaaaaaaaaaaaaaaaab
+ab
+0
+
+aaaaaaaaaaaaaaaaab
+ba
+0
+
+zzzzzzzzzzzz
+zz
+11 0 1 2 3 4 5 6 7 8 9 10
+
+zzzzzzzzzzzz
+zzz
+10 0 1 2 3 4 5 6 7 8 9
+
+zzzzzzzzzzzz
+zzzz
+9 0 1 2 3 4 5 6 7 8
+
+thequickbrownfox
+fox
+1 12
+
+thequickbrownfox
+own
+1 10
+
+thequickbrownfox
+cat
+0

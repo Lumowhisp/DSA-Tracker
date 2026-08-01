@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Ed. Assignment - Functions of a Headmaster</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for professional academic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Noto Sans', sans-serif;
+            color: #1e293b;
+        }
+
+        /* Standard A4 Paper Simulation */
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 25mm 25mm 25mm 25mm;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Clean academic typography overrides */
+        h1, h2, h3, h4 {
+            font-family: 'Lora', Georgia, serif;
+            color: #0f4c81;
+        }
+
+        /* Modern Custom Table spacing */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        /* Printing optimizations */
+        @media print {
+            body {
+                background: white;
+                color: black;
+                margin: 0;
+                padding: 0;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .a4-page {
+                width: 210mm;
+                height: 297mm;
+                padding: 20mm;
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+                box-sizing: border-box;
+            }
+            /* Avoid breaking section headers across pages */
+            h2, h3, table, .avoid-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Top Action Header (Hidden during PDF save) -->
+    <div class="no-print bg-slate-900 text-white py-4 px-6 sticky top-0 z-50 shadow-md flex justify-between items-center">
+        <div>
+            <h1 class="text-white text-lg font-bold font-sans">B.Ed. Assignment PDF Exporter</h1>
+            <p class="text-xs text-slate-300 mt-0.5">Ek click mein apni assignment ka premium PDF download karein</p>
+        </div>
+        <button onclick="window.print()" class="bg-[#0f4c81] hover:bg-[#1a5b94] text-white font-bold text-sm px-6 py-3 rounded-lg flex items-center gap-2 shadow transition-all transform active:scale-95">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            📥 Click here to Save as PDF
+        </button>
+    </div>
+
+    <!-- MAIN EXPORTABLE SHEET CONTAINER -->
+    <div class="py-4">
+
+        <!-- PAGE 1: TITLE BANNER & INTRODUCTION -->
+        <article class="a4-page">
+            <div class="flex flex-col h-full justify-between">
+                <div>
+                    <!-- Assignment Academic Header -->
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-2 mb-8 text-[10px] text-slate-400 uppercase tracking-widest font-semibold">
+                        <span>Course: B.Ed. Second Year</span>
+                        <span>Theory Assignment Portfolio</span>
+                    </div>
+
+                    <!-- Clean Header Card -->
+                    <div class="bg-[#0f4c81] text-white rounded-lg p-8 text-center mb-8">
+                        <span class="text-xs font-semibold uppercase tracking-wider opacity-90">Awadh University Format</span>
+                        <h2 class="text-white text-xl md:text-2xl font-bold mt-2 font-serif leading-snug">Educational Administration, Management & Environmental Education</h2>
+                        <div class="w-20 h-0.5 bg-white/30 mx-auto my-4"></div>
+                        <h3 class="text-white text-md font-medium italic opacity-95">Subject: Role & Functions of a Headmaster</h3>
+                    </div>
+
+                    <!-- Assignment Body Text -->
+                    <div class="text-sm text-justify leading-relaxed">
+                        <h2 class="text-lg font-bold border-b border-slate-100 pb-1 mb-3">Introduction: Role and Significance of the Headmaster</h2>
+                        <p class="mb-4">
+                            As documented in the educational curriculum, the role of a headmaster carries unparalleled duties and responsibilities within society. While national laws and infrastructures are debated and crafted in legislative assemblies and factories, the actual citizens who run the future of the nation are molded within the walls of schools. The headmaster bears the pivotal responsibility of managing this foundational workspace of society, country, and the world at large.
+                        </p>
+                        <p class="mb-4">
+                            The primary and foremost duty of a headmaster centers around the <strong class="font-semibold">attainment of the core objectives of education</strong>. The institution must maximize its achievements by aligning educational goals with the ideals, requirements, and desires of individuals, society, and the nation. To accomplish this, the headmaster acts as the foundational leader of the school, executing functions across several key dimensions: <strong class="font-semibold">Planning, Organization & Administration, Supervision, and Evaluation</strong>.
+                        </p>
+
+                        <h2 class="text-lg font-bold border-b border-slate-100 pb-1 mt-6 mb-3">1. Planning as a Function</h2>
+                        <p class="mb-4">
+                            Planning is the foundational duty of the head of any educational institution. Systematic planning must be conducted prior to executing any institutional programmes, functions, or activities. This layout covers the entire academic year and is systematically divided into distinct phases:
+                        </p>
+
+                        <h3 class="text-md font-semibold text-[#0f4c81] mt-4 mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#1F7A8C]"></span> A. Before the Re-opening of the School
+                        </h3>
+                        <p class="mb-3 text-slate-600 text-xs">
+                            Prior to the start of a new academic session, the headmaster must ensure that all preliminary arrangements are securely in place:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 mb-4 text-xs text-slate-700">
+                            <li><strong>Admissions and Schedule Announcements:</strong> Announce the official dates for school re-opening after summer vacations, specify the deadline for submission of admission forms, fix dates for entrance examinations, and display schedules transparently.</li>
+                            <li><strong>Admission Committee Formulation:</strong> Establish clear rules regarding admissions and set up dedicated committees to handle the intake process. The maximum student capacity for each class must be definitively fixed.</li>
+                            <li><strong>Infrastructure Check:</strong> Audit the school infrastructure to verify whether furniture, laboratory equipment, and library books are sufficient. The headmaster must proactively arrange for repairs or fresh procurement where deficits exist.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Page Indicator -->
+                <div class="border-t border-slate-200 pt-2 text-right text-[10px] text-slate-400">
+                    <span>Page 1</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- PAGE 2: CONTINUED PLANNING & ORGANIZATION -->
+        <article class="a4-page">
+            <div class="flex flex-col h-full justify-between">
+                <div>
+                    <!-- Assignment Academic Header -->
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-2 mb-8 text-[10px] text-slate-400 uppercase tracking-widest font-semibold">
+                        <span>Course: B.Ed. Second Year</span>
+                        <span>Theory Assignment Portfolio</span>
+                    </div>
+
+                    <div class="text-sm text-justify leading-relaxed">
+                        <h3 class="text-md font-semibold text-[#0f4c81] mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#1F7A8C]"></span> B. On the Opening Day and Initial Week of the School
+                        </h3>
+                        <p class="mb-3 text-slate-600 text-xs">
+                            During the first week of the session, the focus shifts to organizing internal resources:
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 mb-4 text-xs text-slate-700">
+                            <li><strong>Inventory Tracking:</strong> Prepare updated inventories tracking the exact numbers of teachers, enrolled students, and available operational classrooms.</li>
+                            <li><strong>Work Allocation among Teachers:</strong> Distribute duties and academic workloads among the teaching staff. While doing so, the headmaster must balance key criteria:
+                                <ul class="list-circle pl-5 mt-1 space-y-1 text-slate-600">
+                                    <li><em>Interest of the Teacher:</em> Entrust teachers with subjects and tasks they are genuinely interested in.</li>
+                                    <li><em>Academic Qualification:</em> Match workloads with the real academic qualifications, work capacity, enthusiasm, and demonstrated ability of each educator.</li>
+                                    <li><em>Equal Distribution:</em> Ensure a fair, uniform quantum of work across the staff to prevent uneven distributions that create institutional dissatisfaction.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Curriculum Planning:</strong> Collect and verify lesson plans and activity charts from each teacher while arranging the distribution of essential teaching aids.</li>
+                        </ul>
+
+                        <h3 class="text-md font-semibold text-[#0f4c81] mt-4 mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#1F7A8C]"></span> C. During the Academic Session
+                        </h3>
+                        <ul class="list-disc pl-5 space-y-1 text-xs text-slate-700 mb-4">
+                            <li>Systematic organization of day-to-day teaching work and regular class schedules.</li>
+                            <li>Scheduling specialized projects, co-curricular events, and teaching-aid distributions.</li>
+                            <li>Arranging periodic evaluation schedules, expert guest lectures, and classroom invigilation rosters during examinations.</li>
+                        </ul>
+
+                        <h3 class="text-md font-semibold text-[#0f4c81] mt-4 mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#1F7A8C]"></span> D. On Ending of the Session
+                        </h3>
+                        <ul class="list-disc pl-5 space-y-1.5 text-xs text-slate-700 mb-6">
+                            <li>Organizing landmark institutional events such as Annual Sports and Games Day, Guardians Day, Cultural Programmes, and the Annual Prize Distribution Day.</li>
+                            <li>Compiling comprehensive Annual Reports for students.</li>
+                            <li>Auditing student attendance registers and fee accounts to ensure no student is left with outstanding dues before results are officially published.</li>
+                        </ul>
+
+                        <h2 class="text-lg font-bold border-b border-slate-100 pb-1 mt-6 mb-3">2. Organization and Administration as a Function</h2>
+                        <p class="mb-4 text-xs">
+                            Organization transforms planned ideas into executable realities. The organizing duties of a headmaster are categorized into four major areas, structured below:
+                        </p>
+
+                        <!-- High Quality Simple Clean Table -->
+                        <div class="overflow-hidden border border-slate-200 rounded-lg shadow-sm">
+                            <table class="text-xs">
+                                <thead class="bg-[#0f4c81] text-white">
+                                    <tr>
+                                        <th class="w-1/4 font-semibold">Organizational Area</th>
+                                        <th class="font-semibold">Core Responsibilities & Duties</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-slate-100">
+                                    <tr>
+                                        <td class="font-semibold text-[#0f4c81] bg-slate-50">1. School Plant</td>
+                                        <td class="text-slate-600">Procuring adequate furniture and equipment; executing pretty repairs; distributing furniture; decorating school lawns; maintaining sports grounds; organizing science laboratories, workshops, and the library; and maintaining strict sanitation across the plant.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold text-[#0f4c81] bg-slate-50">2. Instructional Work</td>
+                                        <td class="text-slate-600">Formulation of educational objectives; curriculum construction; preparation of structured syllabi and unit distributions; classification of pupils; distribution of work among staff; construction of the master time-schedule and school calendar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold text-[#0f4c81] bg-slate-50">3. Organizing Activities</td>
+                                        <td class="text-slate-600">Planning various activities and projects such as sports tournaments, arranging festivals, managing scouting/guides, Red Cross, alumni associations, parent-teacher associations (PTA), and other community activities.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold text-[#0f4c81] bg-slate-50">4. Office Work</td>
+                                        <td class="text-slate-600">Streamlining daily routine clerical work, managing student registration, tracking official correspondence, and accurately recording and maintaining institutional accounts.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Page Indicator -->
+                <div class="border-t border-slate-200 pt-2 text-right text-[10px] text-slate-400">
+                    <span>Page 2</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- PAGE 3: SUPERVISION AS A FUNCTION -->
+        <article class="a4-page">
+            <div class="flex flex-col h-full justify-between">
+                <div>
+                    <!-- Assignment Academic Header -->
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-2 mb-8 text-[10px] text-slate-400 uppercase tracking-widest font-semibold">
+                        <span>Course: B.Ed. Second Year</span>
+                        <span>Theory Assignment Portfolio</span>
+                    </div>
+
+                    <div class="text-sm text-justify leading-relaxed">
+                        <h2 class="text-lg font-bold border-b border-slate-100 pb-1 mb-3">3. Supervision as a Function</h2>
+                        <p class="mb-4 text-xs text-slate-600">
+                            Supervision ensures that all institutional programmes run smoothly and efficiently. A headmaster's supervision must be vigilant yet supportive, identifying institutional strengths and correcting systemic weaknesses.
+                        </p>
+
+                        <!-- Clear borders style blocks -->
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-[#1F7A8C] bg-slate-50 p-4 rounded-r-lg">
+                                <h4 class="text-[#0f4c81] font-bold text-sm mb-1">1. Teaching Work</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Supervising classroom instruction requires a balanced, professional approach: The headmaster must establish a structured plan for classroom observations, maintaining a formal inspection register. Observations should prioritize a constructive and sympathetic viewpoint rather than simple fault-finding. He should enter the classroom as an adviser, co-operator, and friend, giving advice rather than rigid demands.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-[#1F7A8C] bg-slate-50 p-4 rounded-r-lg">
+                                <h4 class="text-[#0f4c81] font-bold text-sm mb-1">2. Hostel Supervision</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    For residential schools, the headmaster's supervisory scope extends to living conditions: monitoring the quality, preparation, and hygienic serving of food; inspecting dormitories for cleanliness, proper ventilation, and study environments; and monitoring physical sanitation (bathrooms, urinals) as well as the hostel log-book.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-[#1F7A8C] bg-slate-50 p-4 rounded-r-lg">
+                                <h4 class="text-[#0f4c81] font-bold text-sm mb-1">3. Office Record and Office</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    The headmaster must inspect office administrative efficiency by checking daily correspondence, ensuring prompt replies, and conducting periodic audits of school records to maintain general institutional efficiency.
+                                </p>
+                            </div>
+
+                            <div class="border-l-4 border-[#1F7A8C] bg-slate-50 p-4 rounded-r-lg">
+                                <h4 class="text-[#0f4c81] font-bold text-sm mb-1">4. General Supervision</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Includes safeguarding physical elements (school building, furniture, teaching materials), checking student union activities, overseeing the school canteen/store, and ensuring that institutional resources—namely energy, money, and time—are fully optimized.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Page Indicator -->
+                <div class="border-t border-slate-200 pt-2 text-right text-[10px] text-slate-400">
+                    <span>Page 3</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- PAGE 4: EVALUATION & CONCLUSION -->
+        <article class="a4-page">
+            <div class="flex flex-col h-full justify-between">
+                <div>
+                    <!-- Assignment Academic Header -->
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-2 mb-8 text-[10px] text-slate-400 uppercase tracking-widest font-semibold">
+                        <span>Course: B.Ed. Second Year</span>
+                        <span>Theory Assignment Portfolio</span>
+                    </div>
+
+                    <div class="text-sm text-justify leading-relaxed">
+                        <h2 class="text-lg font-bold border-b border-slate-100 pb-1 mb-3">4. Evaluation as a Function</h2>
+                        <p class="mb-4 text-xs">
+                            Continuous evaluation is vital to measure the success of implemented policies, assess to what extent educational objectives have been achieved, and track institutional progress:
+                        </p>
+
+                        <!-- Clean Minimal Diagram directly as SVG -->
+                        <div class="my-6 p-4 bg-slate-50 border border-slate-200 rounded-lg flex justify-center">
+                            <svg class="w-full max-w-md h-auto" viewBox="0 0 500 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M250 85 V110 H60 V130" stroke="#1F7A8C" stroke-width="2" />
+                                <path d="M250 85 V130" stroke="#1F7A8C" stroke-width="2" />
+                                <path d="M250 110 H440 V130" stroke="#1F7A8C" stroke-width="2" />
+                                
+                                <rect x="125" y="10" width="250" height="48" rx="8" fill="#0F4C81" />
+                                <text x="250" y="32" fill="white" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Headmaster's Evaluation Framework</text>
+                                <text x="250" y="46" fill="#e0effe" font-family="sans-serif" font-size="8" text-anchor="middle">Multi-Dimensional Quality Control</text>
+
+                                <!-- Node 1 -->
+                                <rect x="10" y="130" width="145" height="90" rx="6" fill="#F8FAFC" stroke="#0F4C81" stroke-width="1.5" />
+                                <text x="82.5" y="148" fill="#0F4C81" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Scholastic Progress</text>
+                                <line x1="20" y1="155" x2="145" y2="155" stroke="#E5E7EB" stroke-width="1" />
+                                <text x="20" y="172" fill="#4B5563" font-family="sans-serif" font-size="8">• Balanced Papers</text>
+                                <text x="20" y="187" fill="#4B5563" font-family="sans-serif" font-size="8">• Regular Weekly Tests</text>
+                                <text x="20" y="202" fill="#4B5563" font-family="sans-serif" font-size="8">• Record Upkeep</text>
+
+                                <!-- Node 2 -->
+                                <rect x="177.5" y="130" width="145" height="90" rx="6" fill="#F8FAFC" stroke="#0F4C81" stroke-width="1.5" />
+                                <text x="250" y="148" fill="#0F4C81" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Co-Scholastic Dev.</text>
+                                <line x1="187.5" y1="155" x2="312.5" y2="155" stroke="#E5E7EB" stroke-width="1" />
+                                <text x="187.5" y="172" fill="#4B5563" font-family="sans-serif" font-size="8">• School Discipline</text>
+                                <text x="187.5" y="187" fill="#4B5563" font-family="sans-serif" font-size="8">• Social & Moral Values</text>
+                                <text x="187.5" y="202" fill="#4B5563" font-family="sans-serif" font-size="8">• Cooperative Attitudes</text>
+
+                                <!-- Node 3 -->
+                                <rect x="345" y="130" width="145" height="90" rx="6" fill="#F8FAFC" stroke="#0F4C81" stroke-width="1.5" />
+                                <text x="417.5" y="148" fill="#0F4C81" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Institutional Standards</text>
+                                <line x1="355" y1="155" x2="480" y2="155" stroke="#E5E7EB" stroke-width="1" />
+                                <text x="355" y="172" fill="#4B5563" font-family="sans-serif" font-size="8">• Policy Success Rates</text>
+                                <text x="355" y="187" fill="#4B5563" font-family="sans-serif" font-size="8">• General School Tone</text>
+                                <text x="355" y="202" fill="#4B5563" font-family="sans-serif" font-size="8">• Method Optimization</text>
+                            </svg>
+                        </div>
+
+                        <ul class="list-disc pl-5 space-y-1.5 text-xs text-slate-700 mb-6">
+                            <li><strong>Assessment of Policies:</strong> Periodically analyze school methods to determine how successfully they meet targeted educational objectives.</li>
+                            <li><strong>Evaluating Student Progress:</strong> Monitor scholastic development using feedback channels like observation, direct probing, and interview records.</li>
+                            <li><strong>Quality Control:</strong> Ensure that examination question papers are balanced—structured so they are neither too easy nor excessively difficult.</li>
+                            <li><strong>Consistency:</strong> Enforce the regular scheduling of weekly and monthly tests and keep dynamic progress records.</li>
+                        </ul>
+
+                        <h2 class="text-lg font-bold border-b border-slate-100 pb-1 mt-4 mb-3">Conclusion</h2>
+                        <p class="mb-4 text-xs text-slate-600">
+                            The headmaster acts as the central hub of the educational machine. By balancing the responsibilities of a meticulous planner, an efficient administrator, a sympathetic supervisor, and an objective evaluator, the headmaster elevates the operational quality of the school. For an effective educational ecosystem, the headmaster must blend organizational firm-handedness with empathetic leadership, ensuring that the school successfully fulfills its responsibilities toward the students, society, and the nation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer Page Indicator -->
+                <div class="border-t border-slate-200 pt-2 text-right text-[10px] text-slate-400">
+                    <span>Page 4</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+</body>
+</html>
